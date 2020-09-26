@@ -1,0 +1,31 @@
+name = "going"
+
+[http]
+host = ""
+port = 8088
+
+[mysql]
+host = "localhost"
+port = 3306
+user = "root"
+password = "123456"
+name = "go_admin_db"
+charset = "utf8mb4"
+
+[logger]
+# 日志级别：debug、info、warn、error、dpanic、panic、fatal
+level="info"
+# 日志文件路径，不存在则报错
+file="./logs/app.log"
+# 每个日志文件保存的最大尺寸 单位：M
+maxSize=10
+# 日志文件最多保存多少个备份
+maxBackups=30
+# 文件最多保存多少天
+maxAge=7
+# 是否生成压缩文件
+compress=true
+# 备份文件名称是否使用本地时间格式化，否则使用 UTC 时间
+localtime=true
+# 初始化字段
+fields={}
